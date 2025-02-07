@@ -1,12 +1,8 @@
-import React from "react";
-import HelloPage from "./hello";
+import { auth } from "./firebase";
 
 function App() {
-  return (
-    <div>
-      <HelloPage />
-    </div>
-  );
+  console.log("Firebase Auth Object:", auth);
+  return <h1>Firebase is set up!</h1>;
 }
 
 export default App;
